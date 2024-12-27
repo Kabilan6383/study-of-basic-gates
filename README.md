@@ -63,15 +63,23 @@ Y= A⊕B
 
 
 **PROGRAM**
+
 module gates_exp1(a, b, c, d, e, x, y, z);
+
   input a, b;
+  
   output c, d, e, x, y, z;
 
   assign c = a & b;   // AND gate
+  
   assign d = a | b;   // OR gate
+  
   assign e = a ^ b;   // XOR gate
+  
   assign x = ~(a & b); // NAND gate
+  
   assign y = ~(a | b); // NOR gate
+  
   assign z = ~(a ^ b); // XNOR gate
 
 endmodule
