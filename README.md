@@ -63,21 +63,23 @@ Y= A⊕B
 
 
 **PROGRAM**
-module logic_gates2(a,b,c,d,e);
-input a,b;
-output c,d,e;
-and(c,a,b);
-or(d,a,b);
-xor(e,a,b);
-//nand(x,a,b);
-//nor(y,a,b);
-//xnor(z,a,b);
-endmodule
+module gates_exp1(a, b, c, d, e, x, y, z);
+  input a, b;
+  output c, d, e, x, y, z;
 
+  assign c = a & b;   // AND gate
+  assign d = a | b;   // OR gate
+  assign e = a ^ b;   // XOR gate
+  assign x = ~(a & b); // NAND gate
+  assign y = ~(a | b); // NOR gate
+  assign z = ~(a ^ b); // XNOR gate
+
+endmodule
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
 
- Developed by:P.Kabilan RegisterNumber: 24900859
+ Developed by:P.Kabilan
+ RegisterNumber: 24900859
  
 **Logic symbol & Truthtable**
 ![WhatsApp Image 2024-12-05 at 18 36 15_c7d5310f](https://github.com/user-attachments/assets/039e1775-cd58-4528-b3fb-7e1d88297d83)
